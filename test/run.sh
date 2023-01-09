@@ -28,4 +28,3 @@ mv bbe.txt test_data
 mv result.txt result
 cd result 
 ls -l >> result.txt
-#i love you
