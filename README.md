@@ -1,5 +1,5 @@
 # Arithemtic Coding, Huffman Coding 比較
-此次程式碼皆由開源取得，故只寫了script file (放在test資料夾)
+此次程式碼皆由開源取得，故只寫了script file (放在test資料夾)及在開源程式碼中加入偵測時間的code
 
 開源程式碼連結
 
