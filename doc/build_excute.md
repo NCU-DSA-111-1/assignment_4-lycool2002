@@ -44,4 +44,4 @@ arithm decode 完的資料為
 decode 又 encode 完的資料為 
 
     testde.txt bbede.txt
-
+另外會把比較的結果輸出到result.txt
