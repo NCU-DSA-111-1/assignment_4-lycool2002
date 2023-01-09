@@ -1,0 +1,18 @@
+arithmetic-coding encode: 0.002039 seconds
+arithmetic-coding encode: 0.455521 seconds
+arithmetic-coding decode: 0.000811 seconds
+arithmetic-coding decode: 0.393938 seconds
+huffman encode: 0.001238 seconds
+huffman encode: 0.417846 seconds
+huffman decode: 0.000972 seconds
+huffman decode: 0.296586 seconds
+total 27408
+-rw-r--r--@ 1 liyancen  staff  4467663 Dec 14 16:16 bbe.txt
+-rw-r--r--@ 1 liyancen  staff  2543821 Dec 14 16:15 bbe.txt.d
+-rw-r--r--@ 1 liyancen  staff  2516841 Dec 14 16:15 bbed.txt
+-rw-r--r--@ 1 liyancen  staff  4467663 Dec 14 16:15 bbede.txt
+-rw-r--r--@ 1 liyancen  staff      304 Dec 14 16:16 result.txt
+-rw-r--r--@ 1 liyancen  staff     6066 Dec 14 16:15 test.txt
+-rw-r--r--@ 1 liyancen  staff     3670 Dec 14 16:15 test.txt.d
+-rw-r--r--@ 1 liyancen  staff     3557 Dec 14 16:15 testd.txt
+-rw-r--r--@ 1 liyancen  staff     6066 Dec 14 16:15 testde.txt
