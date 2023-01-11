@@ -3,8 +3,21 @@ void generator(int grid[9][9], int max_s, int min_s){//1-9 位置1-9 要變空�
     srand( time(NULL) );
 
     int seed[27];
-    for(int i = 0; i< 18; i++){
-        seed[i] = (rand() % 9) + 1;
+
+    for(int i = 0; i< 9; i++){
+        int filled = 0;
+        while(filled == 0){
+            int a = (rand() % 9);
+            filled = 1;
+            for(int j = 0; j < i; j ++){
+                if (a == seed[j]) filled = 0;
+            } 
+            if(filled == 1) seed[i] = a; 
+        }
+    }
+    
+    for(int i = 0; i< 9; i++){
+        seed[i+9] = (rand() % 9);
     }
     for(int i = 0; i< 9; i++){
         seed[i+18] = rand() % (max_s - min_s + 1) + min_s;
