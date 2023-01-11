@@ -19,10 +19,13 @@ void generator(int grid[9][9], int max_s, int min_s){//1-9 位置1-9 要變空�
         int sum = seed[i+18];
         while(sum>0){
             for(int j = 0; j< 9; j++){
-                if(rand() % 2 == 0 ){
-                    grid[i][j] = 0;
-                    sum -- ;
-                } 
+                if(grid[i][j] != 0){
+                    int a = (int)rand() % 2;
+                    if(a == 0 ){
+                        grid[i][j] = 0;
+                        sum -- ;
+                    }  
+                }               
             }    
         }
     }   
