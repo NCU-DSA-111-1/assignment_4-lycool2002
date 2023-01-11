@@ -5,31 +5,28 @@
 #include "can_put.h"
 #include "solve.h"
 #include "generator.h"
+#include "print.h"
 
-
- 
-void print(int arr[9][9]){
-
-    for (int i = 0; i < 9; i++){
-         for (int j = 0; j < 9; j++)
-            printf("%d ",arr[i][j]);
-         printf("\n");   
-    }
-}
- 
-int main()
+int main(int argc, char *argv[] )
 {
     int grid[9][9] = {0};
-    //read("test_board.csv", grid); // 0 means unassigned cells
-
-    // if (solve(grid, 0, 0)==1)
-    //     print(grid);
-    // else
-    //     printf("No solution exists");
-
-    generator(grid,4, 2);
-    print(grid);
- 
+    if(argv[1][1] == 's'){
+        read(argv[2], grid);
+        if (solve(grid, 0, 0)==1)
+            print(grid);
+        else
+            printf("No solution exists");
+    }
+    if(argv[1][1] == 'g'){
+        int max = 0;
+        int min = 0;
+        printf("enter max space of a col\n");
+        scanf("%d" ,&max);
+        printf("enter min space of a col\n");
+        scanf("%d" ,&min);
+        generator(grid, max, min);
+        print(grid);
+    }
     return 0;
-    // This is code is contributed by Pradeep Mondal P
+
 }
